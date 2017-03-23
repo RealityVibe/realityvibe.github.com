@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-03-17 09:15:24
+ * @version $Id$
+ */
+p{
+	display: block;
+	overflow: hidden;
+}
+div{
+	display: block;
+	text-align: center;
+}
+ .box{
+ 	height: 350px;
+ 	width: 350px;
+ 	border: 1px solid black;
+
+ }
+ .triangle{
+        width: 0;
+        height: 0;
+        border:50px transparent solid;
+       border-top-color:lightgray;   }
+  </style>
+.box1{
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+background: lightgray;
+}
+#sun{
+	margin: auto;
+	height:  180px;
+	width: 180px;
+}
