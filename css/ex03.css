@@ -11,7 +11,8 @@
  	height: 150px;
  }
  .Box2{
-	border: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
  	width: 500px;
  	height: 200px;
  }
@@ -58,7 +59,7 @@
  	float: left;
  	margin-left: 5px;
  	margin-top: 5px;
- 	border: 1px solid gray;
+
  	width: 100px;
  	height: 100px;
  	background: #FF4500;
@@ -75,9 +76,10 @@
  	float: left;
  	width: 100px;
  	height: 35px;
+ 	background-color: #E6E6FA;
  	border-radius:  5px;
  }
-  .img3{
+/*  .img3{
  	margin:30px;
  	float: left;
  	width: 100px;
@@ -90,7 +92,7 @@
  	width: 100px;
  	height: 35px;
  	border-radius:  5px;
- }
+ }*/
  /*------------------Box3---------------*/
  #put3{
  	margin-top:  5px;
