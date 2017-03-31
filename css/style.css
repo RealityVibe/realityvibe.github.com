@@ -13,9 +13,10 @@
 }
 
  .ex_list{
+ 	box-sizing:  border-box;
  	margin-top: 50px;
- 	width: 50%;
- 	height: 500px;
+ 	width: 45%;
+ 	height: 300px;
  	float: left;
  }
  #top{
