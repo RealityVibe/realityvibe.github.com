@@ -49,8 +49,8 @@
 	position:  absolute;
 }
 
-#list{
-	position: absolute;
+.list{
+	position: left;
 	margin-left: 100px;
 	font-size:  30px;
 }

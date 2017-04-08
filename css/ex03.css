@@ -5,79 +5,112 @@
  * @date    2017-03-30 13:43:34
  * @version $Id$
  */
- .Box{
-	border: 1px solid gray;
+ .ui-top{
+	border: 1px solid #f7f7f7;
  	width: 500px;
  	height: 150px;
  }
- .Box2{
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
+ .ui-second{
+	border-left: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
  	width: 500px;
  	height: 200px;
  }
-  .Box3{
-	border: 1px solid gray;
+  .ui-bottom{
+	border: 1px solid #f7f7f7;
  	width: 500px;
  	height: 60px;
  }
-  .Box4{
-	border: 1px solid gray;
+  .ui-main{
+	border: 1px solid #f7f7f7;
  	width: 500px;
  	height: 300px;
  }
  /*------------------Box---------------*/
- .title{
+ .ui-top-title{
  	float: left;
- 	margin: 1px;
- 	width: 19.6%;
+	box-sizing:  border-box;
+ 	width: 20%;
  	height: 40px;
  	line-height: 50%;
- 	background:  lightgray;
+ 	background:  #f7f7f7;
  	text-align: center;
- 	border-radius: 3px;
  }
- .title:hover{
+ .ui-top-title:hover{
  	background-color:  white;
+ 	font-weight: bold;
  }
- .title3{
 
+ .ui-top-title3{
  	margin-right: 25px;
  	float: right;
 	width: 100;
 	height: 40;
  }
- .box1{
+ .ui-top-text{
  	margin-left: 25px;
- 	margin-top: 5px;
+ 	margin-top: 10px;
  	border: 1px solid gray;
  	width: 450px;
  	height: 30px;
+ 	float: left;
  }
  /*------------------Box2---------------*/
- .img1{
+ .ui-second-img{
  	float: left;
- 	margin-left: 5px;
- 	margin-top: 5px;
-
+ 	margin-left: 15px;
+ 	margin-top: 15px;
  	width: 100px;
  	height: 100px;
  	background: #FF4500;
  }
- .test{
+ .ui-second-test1{
  	float: right;	
- 	margin: 11px;
+ 	margin-right: 25px;
+ 	margin-top:  40px;
   	border: 1px solid gray;
  	width: 350px;
- 	height: 30px;
+ 	height: 25px;
  }
- .img2{
- 	margin:30px;
+ .ui-second-test2{
+ 	float: right;	
+ 	margin-right:25px;
+ 	margin-top: 10px;
+ 	margin-bottom: 15px;
+  	border: 1px solid gray;
+ 	width: 350px;
+ 	height: 25px;
+ }
+  .ui-second-button-first{
+ 	margin: 20px;
  	float: left;
- 	width: 100px;
- 	height: 35px;
- 	background-color: #E6E6FA;
- 	border-radius:  5px;
+ 	width: 130px;
+ 	height: 40px;
+ 	background-color: #FF4400;
+
+ }
+ .ui-second-button{
+ 	margin: 20px;
+ 	margin-left: 10px;
+ 	float: left;
+ 	width: 130px;
+ 	height: 40px;
+ 	background-color: #FF4400;
+
+ }
+  .ui-second-button-first-text{
+ 	position: absolute;
+ 	color: white;
+ 	font-size: 17px;
+ 	margin-left: 40px;
+ 	margin-top: 10px;
+ }
+ .ui-second-button-text{
+ 	position: absolute;
+ 	 font-size: 17px;
+ 	color: white;
+ 	margin-left: 30px;
+ 	margin-top: 10px;
  }
 /*  .img3{
  	margin:30px;
@@ -94,18 +127,19 @@
  	border-radius:  5px;
  }*/
  /*------------------Box3---------------*/
- #put3{
- 	margin-top:  5px;
+ .ui-bottom-text{
+ 	margin-top:  15px;
  	margin-left: 50px;
- 	width: 400px;
+ 	width: 425px;
  	height: 30px;
+ 	border: 1px solid black;
  }
  /*------------------Box4---------------*/
  .bkgColor0{
- 	margin-left: 40px;
+ 	margin-left: 60px;
  	margin-top: 40px;
- 	width: 100px;
- 	height: 100px;
+ 	width: 80px;
+ 	height: 120px;
  }
  .bkgColor{
  	margin-left: 25px;
@@ -124,26 +158,25 @@
  .fare1{	
  	box-sizing:  border-box;
  	float: left;
- 	border-left: 1px solid gray;
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
-	border-bottom: 1px solid gray;
+	/*border-bottom: 1px solid #f7f7f7;*/
+	border-right: 1px solid #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
 	width: 40%;
 	height: 66.6%;
  }
 .fare2{
 	box-sizing:  border-box;
 	float: left;
-	border-right: 1px solid gray;
-	border-bottom: 1px solid gray;
+	border-right: 1px solid #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
 	width: 20%;
 	height: 33.33%;
 }
 .fare3{
 	box-sizing:  border-box;
 	float: left;
-	border-right: 1px solid gray;
-	border-bottom: 1px solid gray;
+	border-right: 1px solid #f7f7f7;
+	border-bottom: 1px solid #f7f7f7;
 	width: 20%;
 	height: 33.3%;
 }
