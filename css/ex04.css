@@ -173,9 +173,7 @@
 h6{
 	margin: 0;
 }
-h4{
-	margin: 0;
-}
+
 .ui-second-bottom-information{
 	/*width: 370px;*/
 	display: flex;
@@ -190,7 +188,7 @@ h4{
 }
 
 .information{
-		margin-left: 10px;
+	margin-left: 10px;
 	color:#f70b42;
 }
 .oldprice{
@@ -249,7 +247,6 @@ h4{
 	border: 1px solid black;
 	margin: 10px;
 }
-
 .ui-third-bottom-title-h{
 
 }
