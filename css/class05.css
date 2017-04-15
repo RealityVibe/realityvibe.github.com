@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-13 14:07:06
+ * @version $Id$
+ */
+ .ui-container{
+ 	width: 600px;
+ 	height: 320px;
+ 	background-color: white;
+	position: relative;
+/*  	flex-direction: row;
+flex-wrap: wrap; */
+ 	border: 1px solid black;
+ }
+ .ui-container-mask{
+ 	width: 600px;
+ 	height: 320px;
+ 	position: absolute;
+ 	background-color: rgba(0, 0, 0, 0);
+ }
+
+ .ui-container-img{
+ 	/*border: 1px solid black;*/
+ 	width: 100px;
+ 	height: 100px;
+ 	margin: 10px;
+ 	margin-right: 5px;
+ 	background-color:  #666;
+ }
+ .ui-bin-img-clone{
+ 	border: 1px solid black;
+ 	padding: 10px;
+ 	margin-left: 200px;
+ 	margin-top: 25px;
+ 	width: 200px;
+ 	height: 200px;
+ 	margin-right: 0px;
+ 	background-color: white;
+ 	/*background-color:  #666;*/
+ }
+ /*----------------------------------Part 2------------------------*/
+ .ui-page{
+ 	margin-top: 50px;
+ 	width: 600px;
+ 	height: 300px;
+ 		box-sizing: border-box;
+
+ }
+ .ui-page-menu{
+ 	 	box-sizing: border-box;
+ 	width: 302px;
+ 	height: 50px;
+ 	border: 1px solid black;
+ 	border-bottom: 0;
+ 	border-right: 0;
+
+ }
+ .ui-page-text{
+ 	width: 600px;
+ 	height: 250px;
+ 	border: 1px solid black;
+ 	box-sizing: border-box;
+ }
+ .ui-page-menu-select{
+ 	width: 100.2px;
+ 	height: 50px;
+ 	float: left;
+ 	box-sizing: border-box;
+ 	border-right: 1px solid black;
+ 	border-bottom: 1px solid black;
+ }
+ .ui-page-text-word{
+ 	float: right;
+ 	font-size:  180px;
+ 	margin-right: 250px;
+ 	bottom: 100px;
+ 	color: #808080;
+ 	/*font-family: "Microsoft YaHei";*/
+ }
+ .ui-page-menu-select-num{
+	font-size: 20px;
+	text-align:  center;
+ }
+/*---------------------------Part 3---------------------------------*/
+.ui-data{
+	margin-top: 50px;
+	width: 600px;
+	height: 600px;
+	border: 1px solid black;
+	box-sizing: border-box;
+/*	display: flex;*/
+/* 	justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap; */
+}
+.ui-data-item{
+	float: left;
+	margin-top: 20px;
+
+	width: 500px;
+	height: 40px;
+	border: 3px solid black;
+	box-sizing: border-box;
+}
+.ui-data-item-order{
+	/*position: absolute;*/
+	margin-top: 20px;
+	margin-left: 20px;
+	text-align: center;
+	float: left;
+	width: 50px;
+	height: 40px;
+	border: 3px solid black;
+	border-right: 0px;
+	box-sizing: border-box;
+}
+.ui-data-item-opera{
+	text-align: center;
+	float: right;
+	width: 60px;
+	height: 37px;
+	border-left: 3px solid black;
+	box-sizing: border-box;
+}
+.ui-data-button{
+	position:  absolute;
+	left: 450px;
+	float: right;
+	top: 1250px;
+	width: 120px;
+	height: 40px;
+	border: 1px solid black;
+	background-color: #396;
+	color: white;
+	font-size: 30px;
+	text-align:  center;
+}
