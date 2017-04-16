@@ -8,9 +8,9 @@
 var key = 3;
 $(init)
 function init(){
-	$('.ui-container-mask').toggle();
+	$('.ui-container-mask').fadeToggle();
 	$('img').click(function(event){
-		$('.ui-container-mask').toggle();
+		$('.ui-container-mask').fadeToggle();
 		$('.ui-container-mask').append($(this).clone().addClass('ui-bin-img-clone'));
 	});
     $('.ui-container-mask').click(function(event){
