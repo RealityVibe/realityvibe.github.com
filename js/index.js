@@ -5,11 +5,15 @@
  * @version $Id$
  */
 
-var canvas = document.getElementById('canvas'),
-context = canvas.getContext('2d'),
-webbg = new Image();
-webbg.src = "img/webbg.jpg";
-webbg.onload = function()
-{
-	 context.drawImage(webbg,0,0,canvas.width,canvas.height);
+$(init)
+function init(){
+	$('.ui-main-body-mask').fadeToggle();
+	$('img').click(function(event){
+		$('.ui-main-body-mask').fadeToggle();
+		$('.ui-main-body-mask').append($(this).clone().removeClass().addClass('ui-main-img-mask'));
+	});
+	$('.ui-main-body-mask').click(function(event){
+    	$('.ui-main-body-mask').fadeToggle();
+    	$('.ui-main-body-mask').empty();
+    });
 }

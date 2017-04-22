@@ -26,6 +26,15 @@
 	 /*display: flex;*/
 	 	 /*background-color: #7fb80e;*/
 }
+.ui-main-body-mask{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display:  flex;
+	background-color: rgba(144, 144, 144, 0.2);
+}
 .ui-main-body-select{
 	width: 200px;
 	height: 500px;
@@ -35,9 +44,18 @@
 	width: 1000px;
 	height: 1000px;
 }
-.ui-ex-img{
+/*.ui-ex-img{
 	width: 100px;
 	height: 100px;
+}*/
+.ui-main-img-mask{
+	border: 1px solid black;
+ 	padding: 10px;
+ 	margin-left: 25%;
+ 	margin-top: 10%;
+ 	width: 600px;
+ 	height: 600px;
+ 	background: linear-gradient(to right, #f0f2f0, #000c40);
 }
 .ui-main-menu{
  	position: absolute;
@@ -91,6 +109,7 @@
 	width: 60%;
 	height: 120px;
 	margin-top: 20px;
+	margin-left: 20px;
 	left: 20px;
 	display: flex;
 	/*background: linear-gradient(to right, #e8cbc0, #636fa4);*/
@@ -133,7 +152,8 @@
 	margin: 20px;
 	height: 120px;
 	margin-top: 20px;
-	left: 20px;
+	margin-left: 40px;
+	/*left: 20px;*/
 	display: flex;
 	 /*background: linear-gradient(to right, #16bffd, #cb3066); */
 }
@@ -142,14 +162,14 @@
 	width: 0;
     height: 0;
     border-top: 60px solid transparent;
-    border-right: 60px solid #ffffff;
+    border-right: 60px solid #7bbfea;
     border-bottom: 60px solid transparent;
 } 
 .ui-main-body-label05{
  	position: relative;
  	width: 80%;
  	height: 100%;
-   background: linear-gradient(to left, #abbaab, #ffffff);
+   background: linear-gradient(to left, #abbaab, #ffffff, #7bbfea);
  	border-top-right-radius: 20px;
  	border-bottom-right-radius: 20px;
  }
@@ -175,6 +195,7 @@
 	margin: 20px;
 	height: 120px;
 	margin-top: 20px;
+	margin-left: 60px;
 	left: 20px;
 	display: flex;
 	 /*background: linear-gradient(to right, #16bffd, #cb3066); */
@@ -209,33 +230,98 @@
 	margin-right: 20px;
 	border-radius: 5px;
  }
- .ui-main-body-label06-img:hover{
+/*  .ui-main-body-label06-img:hover{
 	width: 300px;
 	height: 300px;
 	float: right;
 	margin-top: 10px;
 	margin-right: 20px;
 	border-radius: 5px;
- }
- /*---------------Experiment03----------------------------*/
-.ui-main-body-ex07{
-	width: 80%;
-	height: 200px;
-	margin: 20px;
-	border: 1px solid lightgray;
-	border-top-right-radius: 100px;
-	 background: linear-gradient(to left, #67b26f, #4ca2cd);
+} */
+ /*---------------Experiment07----------------------------*/
 
-}
-.ui-main-body-ex08{
-	width: 80%;
-	height: 200px;
+.ui-main-body-ex07{
+	width: 65%;
+	height: 80px;
 	margin: 20px;
-	border: 1px solid lightgray;
-	border-top-right-radius: 100px;
-	background-color: white;
-	/*// box-sizing: border-box;*/
+	height: 120px;
+	margin-top: 20px;
+	left: 20px;
+	display: flex;
+	 /*background: linear-gradient(to right, #16bffd, #cb3066); */
 }
+.ui-main-body-ex07-tip{
+	width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 60px solid #c2e59c;
+    border-bottom: 60px solid transparent;
+} 
+.ui-main-body-label07{
+ 	position: relative;
+ 	width: 80%;
+ 	height: 100%;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+ 	border-top-right-radius: 20px;
+ 	border-bottom-right-radius: 20px;
+ }
+ .ui-main-body-label07-link{
+ 	position: relative;
+ 	/*margin-top: 150px;*/
+ 	top: 40%;
+ 	left: 10%;
+ 	font-size:  20px;
+ }
+.ui-main-body-label07-img{
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	border-radius: 5px;
+ }
+/*----------------Experiment08---------------------------*/
+.ui-main-body-ex08{
+	width: 65%;
+	height: 80px;
+	margin: 20px;
+	height: 120px;
+	margin-top: 20px;
+	margin-left: -20px;
+	display: flex;
+	 /*background: linear-gradient(to right, #16bffd, #cb3066); */
+}
+.ui-main-body-ex08-tip{
+	width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-right: 60px solid #d7d2cc;
+    border-bottom: 60px solid transparent;
+} 
+.ui-main-body-label08{
+ 	position: relative;
+ 	width: 60%;
+ 	height: 100%;
+ background: linear-gradient(to left, #304352, #d7d2cc);
+ 	border-top-right-radius: 20px;
+ 	border-bottom-right-radius: 20px;
+ }
+ .ui-main-body-label08-link{
+ 	position: relative;
+ 	/*margin-top: 150px;*/
+ 	top: 40%;
+ 	left: 10%;
+ 	font-size:  20px;
+ }
+.ui-main-body-label08-img{
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	border-radius: 5px;
+ }
+ /*----------------------------------------------------------*/
 .ui-main-title{
  	top: 5px;
  	width: 100%;
