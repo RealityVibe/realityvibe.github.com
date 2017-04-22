@@ -6,7 +6,7 @@
  */
 var text1 = document.querySelector('.text1');
 var mydate = new Date();
-window.onload=function()
+/*window.onload=function()
 {
 	var text1 = document.querySelector('.text1');
 	setInterval(function(){
@@ -17,4 +17,4 @@ window.onload=function()
 		+ time.getSeconds();
 		text1.innerHTML = t;
 	},1000);
-}
+}*/
