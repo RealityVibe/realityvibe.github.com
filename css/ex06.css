@@ -323,9 +323,10 @@ box-sizing: border-box; */
 	width: 100%;
 }
 .ui-main-shift-news-apart{
-	width: 10px;
+	width: 8px;
 	height: 100%;
-    background: linear-gradient(white 0%, #96c7d8 30%, #96c7d8 0 ,white 60%, #96c7d8 90%,white 100%);
+    background: linear-gradient(#96c7d8 50%, white 50%); 
+	background-size: 100% 17px;
 	border: 3px solid #96c7d8;
 	box-sizing: border-box;
 }
