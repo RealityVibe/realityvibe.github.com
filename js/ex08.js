@@ -235,7 +235,151 @@ function init(){
       });
     }
   });
-    
+  $("#task1").click(function(){
+      local.searchNearby("宾馆", "西湖");
+  });
+  $("#task2").click(function(){
+      transit.search("杭州师范大学仓前新校区", "浙江宾馆");
+  });
+  $("#task3").click(function(){
+      $.getJSON("src/school.json",function(data){
+    for(i = 0; i <50; i++)
+    {
+      var pointArray = new BMap.Point(data['teachingBuilding'][i]['lng'],data['teachingBuilding'][i]['lat']);
+      var marker = new BMap.Marker(pointArray);// 创建标注   
+  /*    console.log(data['teachingBuilding'][i]['name']);*/
+    /*  console.log(marker.point.lng);*/
+      map.addOverlay(marker); 
+      var name = data['teachingBuilding'][i]['name'];
+      marker.addEventListener("click",function(e){
+        //通过当前标注的坐标匹配信息
+        var content;
+        var name = "名字:  ";
+        var comment = "评论数: ";
+        var grade = "评分："
+        for(i = 0; i <50; i++)
+        {
+          //判断星级
+          if(data['teachingBuilding'][i]['lng'] == this.point.lng){
+            if(data['teachingBuilding'][i]['grade'] > 4 )
+            {
+              content = "<div class=\"ui-infowind\"> \
+                                <div class=\"container-fluid\"> \
+                                    <div class=\"row\"> \
+                                        <div class=\"ui-infowind-img\"></div> \
+                                    </div> \
+                                    <div class=\"row\"> \
+                                        <div class=\"col-sm-8\"> \
+                                            <div class=\"ui-infowind-left\"> \
+                                                <div class=\"ui-infowind-name\">" + name + data['teachingBuilding'][i]['name'] + "</div> \
+                                                 <img src=\"img/hznu.jpg\" class=\"ui-infowind-img\">\
+                                                <div class=\"ui-infowind-star\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></div> \
+                                                <span class=\"ui-infowind-grade\">"+ grade + data['teachingBuilding'][i]['grade'] + "</span> \
+                                                <span class=\"ui-infowind-review\">" + comment + data['teachingBuilding'][i]['review'] + "</span> \
+                                            </div> \
+                                        <a class=\"ui-infowind-more\">查看详情</a> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                            </div>";
+            }
+             else if(data['teachingBuilding'][i]['grade'] > 3 )
+            {
+              content = "<div class=\"ui-infowind\"> \
+                                <div class=\"container-fluid\"> \
+                                    <div class=\"row\"> \
+                                        <div class=\"ui-infowind-img\"></div> \
+                                    </div> \
+                                    <div class=\"row\"> \
+                                        <div class=\"col-sm-8\"> \
+                                            <div class=\"ui-infowind-left\"> \
+                                                <div class=\"ui-infowind-name\">" + name + data['teachingBuilding'][i]['name'] + "</div> \
+                                                 <img src=\"img/hznu.jpg\" class=\"ui-infowind-img\">\
+                                                <div class=\"ui-infowind-star\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></div> \
+                                                <span class=\"ui-infowind-grade\">"+ grade + data['teachingBuilding'][i]['grade'] + "</span> \
+                                                <span class=\"ui-infowind-review\">" + comment + data['teachingBuilding'][i]['review'] + "</span> \
+                                            </div> \
+                                             <a class=\"ui-infowind-more\">查看详情</a> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                            </div>";
+            }
+              else if(data['teachingBuilding'][i]['grade'] > 2 )
+            {
+              content = "<div class=\"ui-infowind\"> \
+                                <div class=\"container-fluid\"> \
+                                    <div class=\"row\"> \
+                                        <div class=\"ui-infowind-img\"></div> \
+                                    </div> \
+                                    <div class=\"row\"> \
+                                        <div class=\"col-sm-8\"> \
+                                            <div class=\"ui-infowind-left\"> \
+                                                <div class=\"ui-infowind-name\">" + name + data['teachingBuilding'][i]['name'] + "</div> \
+                                                 <img src=\"img/hznu.jpg\" class=\"ui-infowind-img\">\
+                                                <div class=\"ui-infowind-star\"><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i></div> \
+                                                <span class=\"ui-infowind-grade\">"+ grade + data['teachingBuilding'][i]['grade'] + "</span> \
+                                                <span class=\"ui-infowind-review\">" + comment + data['teachingBuilding'][i]['review'] + "</span> \
+                                            </div> \
+                                       <a class=\"ui-infowind-more\">查看详情</a> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                            </div>";
+            }
+              else if(data['teachingBuilding'][i]['grade'] > 1 )
+            {
+              content = "<div class=\"ui-infowind\"> \
+                                <div class=\"container-fluid\"> \
+                                    <div class=\"row\"> \
+                                        <div class=\"ui-infowind-img\"></div> \
+                                    </div> \
+                                    <div class=\"row\"> \
+                                        <div class=\"col-sm-8\"> \
+                                            <div class=\"ui-infowind-left\"> \
+                                                <div class=\"ui-infowind-name\">" + name + data['teachingBuilding'][i]['name'] + "</div> \
+                                                 <img src=\"img/hznu.jpg\" class=\"ui-infowind-img\">\
+                                                <div class=\"ui-infowind-star\"><i class=\"fa fa-star\"></i></div> \
+                                                <span class=\"ui-infowind-grade\">"+ grade + data['teachingBuilding'][i]['grade'] + "</span> \
+                                                <span class=\"ui-infowind-review\">" + comment + data['teachingBuilding'][i]['review'] + "</span> \
+                                            </div> \
+                                       <a class=\"ui-infowind-more\">查看详情</a> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                            </div>";
+            }
+            else
+            {
+              content = "<div class=\"ui-infowind\"> \
+                                <div class=\"container-fluid\"> \
+                                    <div class=\"row\"> \
+                                        <div class=\"ui-infowind-img\"></div> \
+                                    </div> \
+                                    <div class=\"row\"> \
+                                        <div class=\"col-sm-8\"> \
+                                            <div class=\"ui-infowind-left\"> \
+                                                <div class=\"ui-infowind-name\">" + name + data['teachingBuilding'][i]['name'] + "</div> \
+                                                 <img src=\"img/hznu.jpg\" class=\"ui-infowind-img\">\
+                                                <div class=\"ui-infowind-star\"><i class=\"fa fa-star-o\"></i></div> \
+                                                <span class=\"ui-infowind-grade\">"+ grade + data['teachingBuilding'][i]['grade'] + "</span> \
+                                                <span class=\"ui-infowind-review\">" + comment + data['teachingBuilding'][i]['review'] + "</span> \
+                                            </div> \
+                                        <a class=\"ui-infowind-more\">查看详情</a> \
+                                        </div> \
+                                    </div> \
+                                </div> \
+                            </div>";
+            }
+
+            break;}//匹配成功 break此时的i为所求的序号
+        }
+        /* console.log(this.point.lng);*/
+        openInfo(content,e)
+      });
+    }
+  });
+  });
 
 // 打开信息窗口
 }

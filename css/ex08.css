@@ -178,6 +178,75 @@
 	margin-top: 2.5px;
 	line-height: 30px;
 }
+#task1
+{
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px lightgray solid;
+	font-size: 18px;
+	color: black;
+	background: white;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+#task2
+{
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px lightgray solid;
+	font-size: 18px;
+	color: black;
+	background: white;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+#task3
+{
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px lightgray solid;
+	font-size: 18px;
+	color: black;
+	background: white;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+#task1:hover
+{
+	width: 100px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 2.5px;
+	line-height: 30px;
+}
+#task2:hover
+{
+	width: 100px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 2.5px;
+	line-height: 30px;
+}
+#task3:hover
+{
+	width: 100px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 2.5px;
+	line-height: 30px;
+}
 #bmark-after
 {
 	content: "停止标注";
