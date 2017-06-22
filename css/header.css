@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-22 11:10:40
+ * @version $Id$
+ */
+.header{
+	height: 50px;
+	background-color: black;
+}
+.header>div{
+	width: 250px;
+	margin: auto;
+
+}
+.header h1{
+	color: black;
+	text-align: center;
+	margin: 0;
+}
+.breadcrumb{
+	margin-bottom: 0px;
+}
+.header-select{
+	margin-top: 5px;
+}
+.header-title{
+	margin-top: 5px;
+	height: 100%;
+}
