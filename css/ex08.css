@@ -122,11 +122,7 @@
 }
 #confirm:hover
 {
-	width: 100px;
-	height: 30px;
-	margin-left: 20px;
-	margin-top: 2.5px;
-	line-height: 30px;
+	background-color: lightgray;
 }
 .fa-star
 {
