@@ -10,6 +10,9 @@
 	text-align: center;
 }*/
 /*body*/
+ul{
+  padding: 0px;
+}
 body{
 	background-color: lightgray;
 }
@@ -24,6 +27,7 @@ body{
 
 body {
     background: linear-gradient(to right, #70e1f5, #ffd194);
+
 }
 
 img {
@@ -231,4 +235,39 @@ img {
 }
 .site-footer__text__link {
   color: #8287a9;
+}
+
+/* lunbotu.css */
+.img-luara{
+  margin-top: 0px;
+  width: 100%;
+  height: 615px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+.img-luara ul{
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+.img-luara ul li{
+  padding-top: 0;
+  width:100%;
+  list-style: none;
+  width:640px; 
+  height:250px;
+    overflow: hidden;
+  /*background-color: #f00;*/
+  text-align: center;
+}
+.img-luara>ul>li{
+  width: 100%;
+  height: 100%;
+}
+.img-luara ul li:not(:first-child){
+  display: none;
+}
+.img-luara img{
+  width: 100%;
+  /*height: 100%;*/
 }

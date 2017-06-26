@@ -29,3 +29,6 @@
 	margin-top: 5px;
 	height: 100%;
 }
+.menu-select :hover{
+	border-bottom: 1px red solid; 
+}

@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- 标签页icon -->
-<link rel="shortcut icon" href="img/lemon.ico" type="image/x-icon" />
-<link rel="bookmark" href="img/lemon.ico" type="image/x-icon">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 标签页icon -->
+    <link rel="shortcut icon" href="img/lemon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="img/lemon.ico" type="image/x-icon">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>RealityVibe</title>
+  </head>
+  <body>
+    <!-- 标题栏 -->
+    <div class="container-fluid header">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="row">
+          <!-- 标题 -->
+          <div class="col-sm-8 header-title">
+            <h1>RealityVibe</h1>
+          </div>
+          <!-- header菜单栏 -->
+          <div class="col-sm-4">
+            <ol class="breadcrumb header-select">
+              <li class="active">Home</li>
+              <li><a href="webdesign.html">Webdesign</a></li>
+              <li><a href="#">Poem</a></li>
+              <li><a href="experience.html">Exp</a></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- 轮播图展示 -->
 
-<link href="css/header.css" rel="stylesheet">  
-<link href="css/style.css" rel="stylesheet">
-<title>RealityVibe</title>
-</head>
-<body> 	
-  <!-- 标题栏 -->
-  <div class="container-fluid header">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="row">
-        <!-- 标题 -->
-        <div class="col-sm-8 header-title">
-          <h1>RealityVibe</h1>
+    <div class="img-luara" id = "lunbo">
+      <ul id='luara-list1'>
+        <li><img src="img/luara-1.0.jpg" alt=""></li>
+        <li><img src="img/luara-2.0.jpg" alt=""></li>
+        <li><img src="img/luara-3.0.jpg" alt=""></li>
+        <li><img src="img/luara-4.0.jpg" alt=""></li>
+      </ul>
+      <ul id="luara-list2"></ul>
+    </div>
+    <!-- content -->
+    <div class="container-fluid content">
+      <section class="timeline">
+        <div class="wrapper">
+          <div class="timeline__item timeline__item--0">
+            <div class="timeline__item__station"></div>
+            <div class="timeline__item__content">
+              <h2 class="timeline__item__content__date">1977 Aug. 20</h2>
+              <p class="timeline__item__content__description">Voyager 2 launched from Kennedy Space Flight Center</p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--1">
+            <div class="timeline__item__station"></div>
+            <div class="timeline__item__content">
+              <h2 class="timeline__item__content__date">2017 Feb. 24</h2>
+              <p class="timeline__item__content__description">Begin to learn about web design.</p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--2">
+            <div class="timeline__item__station"></div>
+            <div class="timeline__item__content">
+              <h2 class="timeline__item__content__date">2017 June. 21</h2>
+              <p class="timeline__item__content__description">Blog version 1.0 and web version 3.0 start.</p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--3">
+            <div class="timeline__item__station"></div>
+            <div class="timeline__item__content">
+              <!-- <h2 class="timeline__item__content__date">1979 July 9</h2> -->
+              <p class="timeline__item__content__description">To be continue...</p>
+            </div>
+          </div>
+          <!-- <div class="timeline__item timeline__item--4">
+            <div class="timeline__item__station"></div>
+            <div class="timeline__item__content">
+              <h2 class="timeline__item__content__date">1980 Nov. 12</h2>
+              <p class="timeline__item__content__description">Voyager 1 flies by Saturn, Voyager 1 begins its trip out of the Solar System</p>
+            </div>
+          </div> -->
         </div>
-        <!-- header菜单栏 -->
-        <div class="col-sm-4">
-          <ol class="breadcrumb header-select">
-            <li class="active">Home</li>
-            <li><a href="webdesign.html">Webdesign</a></li>
-            <li><a href="#">Poem</a></li>  
-            <li><a href="experience.html">Exp</a></li>          
-          </ol>
-        </div>
-      </div>
-    </nav>
-  </div>
+      </section>
+    </div>
+  </body>
+ <!--  <script type="text/javascript">
+    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+    var li=document.getElementById('lunbo').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
 
-  <!-- content -->
-  <div class="container-fluid content">
-    <section class="timeline">
-      <div class="wrapper">
-        <div class="timeline__item timeline__item--0">
-          <div class="timeline__item__station"></div>
-          <div class="timeline__item__content">
-            <h2 class="timeline__item__content__date">1977 Aug. 20</h2>
-            <p class="timeline__item__content__description">Voyager 2 launched from Kennedy Space Flight Center</p>
-          </div>
-        </div>
-        <div class="timeline__item timeline__item--1">
-          <div class="timeline__item__station"></div>
-          <div class="timeline__item__content">
-            <h2 class="timeline__item__content__date">2017 Feb. 24</h2>
-            <p class="timeline__item__content__description">Begin to learn about web design.</p>
-          </div>
-        </div>
-        <div class="timeline__item timeline__item--2">
-          <div class="timeline__item__station"></div>
-          <div class="timeline__item__content">
-            <h2 class="timeline__item__content__date">2017 June. 21</h2>
-            <p class="timeline__item__content__description">Blog version 1.0 and web version 3.0 start.</p>
-          </div>
-        </div>
-        <div class="timeline__item timeline__item--3">
-          <div class="timeline__item__station"></div>
-          <div class="timeline__item__content">
-            <!-- <h2 class="timeline__item__content__date">1979 July 9</h2> -->
-            <p class="timeline__item__content__description">To be continue...</p>
-          </div>
-        </div>
-        <!-- <div class="timeline__item timeline__item--4">
-          <div class="timeline__item__station"></div>
-          <div class="timeline__item__content">
-            <h2 class="timeline__item__content__date">1980 Nov. 12</h2>
-            <p class="timeline__item__content__description">Voyager 1 flies by Saturn, Voyager 1 begins its trip out of the Solar System</p>
-          </div>
-        </div> -->
-      </div>
-    </section>
-  </div>
-</body>
-	<script src="lib/jquery-3.2.1.js"></script>
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },2000);//切换时间
+</script> -->
+  <!-- <script src="lib/jquery-3.2.1.js"></script> -->
   <script src="js/index.js"></script>
 </html>
