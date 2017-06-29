@@ -14,3 +14,28 @@ body{
   /*background: linear-gradient(to right, #70e1f5, #ffd194);*/
   /*background-repeat: repeat-y;*/
  }
+
+.nav-tabs>li{
+	display: block;
+} 
+.col-menu{
+	font-size: 20px;
+	padding-left: 5px;
+	color: gray;
+}
+.menu-right{
+	width: 200px;
+	/*left: 1000px;*/
+	height: 250px;
+	border: 1px #ddd solid;
+	border-radius: 3px;
+	/*position: absolute;*/
+
+}
+.col-menu{
+	padding-left: 15px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f5f5f5;
+	border-bottom:  1px #ddd solid;
+}

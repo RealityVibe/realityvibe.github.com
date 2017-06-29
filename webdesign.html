@@ -15,9 +15,9 @@
 <link href="css/webdesign.css" rel="stylesheet"> 
 <title>RealityVibe</title>
 </head>
-<body  > 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="40"> 
 	<div class="container-fluid header">
-	    <nav class="navbar navbar-default navbar-fixed-top">
+	    <nav class="navbar navbar-default navbar-fixed-top" id='myScrollspy'>
 	      <div class="row">
 	        <!-- 标题 -->
 	        <div class="col-sm-8 header-title">
@@ -40,7 +40,7 @@
   		<div class="content-blank"></div>
   		<div class="row">
   			<div class="col-md-1"></div>
-	  		<div class="col-md-8 content-box">
+	  		<div class="col-md-8 content-box" data-spy="scroll" data-target="#selector">
 	  			<div class="panel panel-default">
 					<div class="panel-heading">Experiment03 定位基本练习</div>
 				  	<div class="panel-body">
@@ -91,7 +91,33 @@
 				  	</div>
 				</div>
 	  		</div>
-  		</div>	
+	  		<div class="col-md-2">
+	  			<nav class="navbar navbar-default navbar-fixed-right">
+			  		<div class="container">
+						<ul class="nav nav-pills nav-stacked menu" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+							<li class="menu-heading">快捷菜单</li>
+							<li><a href="#profile">个人信息</a></li>
+							<li><a href="#app">关注应用</a></li>
+							<li><a href="#keyword">关键词管理</a></li>
+						</ul>
+			  		</div>
+				</nav>
+	  		</div>
+  		</div>
+			<!-- <nav class="col-md-3 col-sm-3 hidden-xs" id="myScrollspy">
+			                <ul class="nav nav-pills nav-stacked menu" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			                    <li class="menu-heading">快捷菜单</li>
+			                    <li><a href="#profile">个人信息</a></li>
+			                    <li><a href="#app">关注应用</a></li>
+			                    <li><a href="#keyword">关键词管理</a></li>
+			                </ul>
+			            </nav> -->
+
   	</div>
+  	<!-- jQuery (Bootstrap必需) -->
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
+<script></script>
 </html>

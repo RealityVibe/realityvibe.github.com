@@ -33,16 +33,33 @@
         </div>
       </nav>
     </div>
-    <!-- 轮播图展示 -->
 
+    <!-- 轮播图展示 -->
     <div class="img-luara" id = "lunbo">
-      <ul id='luara-list1'>
+      <table cellspacing="0" cellpadding="0"
+        style="width: 500px; border: 0px; overflow: hidden;">
+        <tr>
+          <td id="luara-list1">
+            <table  cellpadding="0" cellspacing="0">
+              <tr id="pic">
+                <td><img  alt="" src="img/luara-1.0.jpg" /></td>
+                <td><img  alt="" src="img/luara-2.0.jpg" /></td>
+                <td><img  alt="" src="img/luara-3.0.jpg" /></td>
+                <td><img  alt="" src="img/luara-4.0.jpg" /></td>
+                <td><img  alt="" src="img/luara-5.0.jpg" /></td>
+              </tr>
+            </table>
+          </td>
+          <td id="luara-list2"></td>
+        </tr>
+      </table>
+     <!--  <ul id='luara-list1'>
         <li><img src="img/luara-1.0.jpg" alt=""></li>
         <li><img src="img/luara-2.0.jpg" alt=""></li>
         <li><img src="img/luara-3.0.jpg" alt=""></li>
         <li><img src="img/luara-4.0.jpg" alt=""></li>
       </ul>
-      <ul id="luara-list2"></ul>
+      <ul id="luara-list2"></ul> -->
     </div>
     <!-- content -->
     <div class="container-fluid content">
@@ -87,19 +104,5 @@
       </section>
     </div>
   </body>
- <!--  <script type="text/javascript">
-    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
-    var li=document.getElementById('lunbo').getElementsByTagName("li");
-    var num=0;
-    var len=li.length;
-
-    setInterval(function(){
-        li[num].style.display="none";
-        num=++num==len?0:num;
-        li[num].style.display="inline-block";
-
-    },2000);//切换时间
-</script> -->
-  <!-- <script src="lib/jquery-3.2.1.js"></script> -->
   <script src="js/index.js"></script>
 </html>
